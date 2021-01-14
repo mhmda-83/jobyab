@@ -1,0 +1,43 @@
+{
+	"name": "jobyab",
+	"version": "1.0.0",
+	"main": "src/index.ts",
+	"scripts": {
+		"lint": "eslint \"./**/*.{ts,js}\"",
+		"lint:fix": "eslint \"./**/*.{ts,js}\" --quiet --fix",
+		"format": "prettier --write \"./**/*.{ts,js,json}\"",
+		"build": "tsc --project ./",
+		"dev": "nodemon src/index.ts",
+		"start": "yarn build && node dist/index",
+		"commit": "cz"
+	},
+	"author": "Mohammad MohammadAlian <mralian.dev@gmail.com>",
+	"license": "MIT",
+	"dependencies": {
+		"bull": "3.20.0",
+		"dotenv": "8.2.0",
+		"mongoose": "5.11.9",
+		"node-telegram-bot-api": "0.51.0",
+		"puppeteer": "5.5.0"
+	},
+	"engines": {
+		"node": "12.x"
+	},
+	"devDependencies": {
+		"@commitlint/config-conventional": "11.0.0",
+		"@fullstacksjs/eslint-config": "4.2.1",
+		"@types/bull": "3.14.4",
+		"@types/node-telegram-bot-api": "0.51.0",
+		"@types/puppeteer": "5.4.2",
+		"commitizen": "4.2.2",
+		"commitlint": "11.0.0",
+		"eslint": "7.17.0",
+		"eslint-config-prettier": "7.1.0",
+		"husky": "4.3.7",
+		"lint-staged": "10.5.3",
+		"nodemon": "2.0.7",
+		"prettier": "2.2.1",
+		"ts-node": "9.1.1",
+		"typescript": "4.1.3"
+	}
+}
