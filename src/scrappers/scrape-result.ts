@@ -4,7 +4,7 @@ export interface ScrapeResult {
 	websiteName: string;
 	city?: string;
 	salary?: string;
-	pageUrl?: string | null;
-	logoUrl?: string;
+	pageUrl?: null | string;
+	logoUrl?: null | string;
 	keyword: string;
 }
