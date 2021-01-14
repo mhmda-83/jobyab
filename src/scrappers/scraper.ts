@@ -1,4 +1,5 @@
 import puppeteer from 'puppeteer';
+
 import { ScrapeResult } from './scrape-result';
 
 export interface Scrapper {

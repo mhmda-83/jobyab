@@ -1,4 +1,5 @@
 import mongoose from 'mongoose';
+
 import { ScrapeResult } from '../scrappers/scrape-result';
 
 export interface Job extends ScrapeResult {

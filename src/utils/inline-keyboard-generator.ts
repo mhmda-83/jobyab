@@ -1,4 +1,5 @@
 import { InlineKeyboardButton } from 'node-telegram-bot-api';
+
 import { IUser } from '../models/user';
 
 export const technologiesKeyboardGenerator = (
